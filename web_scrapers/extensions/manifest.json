@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Custom Google Homepage",
+    "description": "This extension shows a Google Image search result for the current page",
+    "version": "1.0",
+
+    "content_scripts" : [
+        {
+            "matches": ["https://www.music.google.com/*"],
+            "js": ["app.js"]
+
+        }
+    ],
+
+
+
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_title": "My custom google page!"
+    }
+}
